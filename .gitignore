@@ -1,0 +1,15 @@
+# Сессия Telethon и секреты — не публиковать
+*.session
+*.session-journal
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
