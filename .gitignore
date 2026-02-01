@@ -2,6 +2,8 @@
 *.session
 *.session-journal
 .env
+config.json
+sessions/
 
 # Python
 __pycache__/

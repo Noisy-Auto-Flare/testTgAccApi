@@ -1,0 +1,58 @@
+{
+  "telegram": {
+    "api_id": 123456,
+    "api_hash": "your_api_hash_here"
+  },
+  "accounts": [
+    {
+      "name": "account1",
+      "session_file": null,
+      "phone": "+79001234567",
+      "llm": {
+        "enabled": false,
+        "api_url": "http://127.0.0.1:5000/api/v1/chat/completions",
+        "api_key": null,
+        "system_prompt": "Ты полезный ассистент в Telegram. Отвечай кратко и дружелюбно.",
+        "allowed_chat_ids": [],
+        "timeout": 60
+      },
+      "media_forward": {
+        "enabled": false,
+        "source_chat_ids": [
+          123456789
+        ],
+        "target_channel_id": -100123456789,
+        "include_captions": true
+      }
+    },
+    {
+      "name": "account2_with_session",
+      "session_file": "./sessions/account2.session",
+      "phone": null,
+      "llm": {
+        "enabled": true,
+        "api_url": "http://127.0.0.1:5000/api/v1/chat/completions",
+        "api_key": null,
+        "system_prompt": "Ты профессиональный ассистент. Помогай пользователям решать их задачи.",
+        "allowed_chat_ids": [
+          987654321,
+          123123123
+        ],
+        "timeout": 60
+      },
+      "media_forward": {
+        "enabled": true,
+        "source_chat_ids": [
+          -100123456789,
+          -100987654321
+        ],
+        "target_channel_id": -100555666777,
+        "include_captions": true
+      }
+    }
+  ],
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}
