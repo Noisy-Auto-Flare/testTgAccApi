@@ -4,6 +4,8 @@
 
 | Файл | Описание | Время |
 |------|---------|-------|
+| [CONFIG_USAGE_GUIDE.md](CONFIG_USAGE_GUIDE.md) | **Как использовать config.json (примеры)** | 10 мин |
+| [CONFIG_GUIDE.md](CONFIG_GUIDE.md) | **Полный справочник конфигурации** | 20 мин |
 | [QUICKSTART.md](QUICKSTART.md) | **Запуск за 5 минут** | 5 мин |
 | [INSTALLATION.md](INSTALLATION.md) | **Подробная инструкция** | 20 мин |
 | [README.md](README.md) | **Полная документация** | 30 мин |
