@@ -11,9 +11,6 @@ from telethon.tl.types import (
     TypeMessage,
     Photo,
     Document,
-    Video,
-    VideoAttribute,
-    PhotoAttribute,
 )
 
 logger = logging.getLogger(__name__)
@@ -56,7 +53,7 @@ class MediaForwarder:
             return False
 
         media = message.media
-        return isinstance(media, (Photo, Document, Video)) or self._is_video_media(
+        return isinstance(media, (Photo, Document)) or self._is_video_media(
             media
         )
 

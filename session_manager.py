@@ -93,7 +93,14 @@ class SessionManager:
         session_name = session_path.stem
 
         # Создаём клиент, указывая путь к существующей сессии
-        self.client = TelegramClient(str(session_path.parent / session_name), self.api_id, self.api_hash)
+        self.client = TelegramClient(
+            str(session_path.parent / session_name),
+            self.api_id,
+            self.api_hash,
+            device_model='Desktop',
+            system_version='Linux',
+            app_version='1.0'
+        )
 
         try:
             await self.client.connect()
@@ -124,7 +131,14 @@ class SessionManager:
         Raises:
             AuthKeyUnregisteredError: Если авторизация не удалась
         """
-        self.client = TelegramClient(self.session_name, self.api_id, self.api_hash)
+        self.client = TelegramClient(
+            self.session_name,
+            self.api_id,
+            self.api_hash,
+            device_model='Desktop',
+            system_version='Linux',
+            app_version='1.0'
+        )
 
         try:
             await self.client.connect()

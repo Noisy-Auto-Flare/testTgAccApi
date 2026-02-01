@@ -10,10 +10,12 @@
 
 - 🎯 **[CONFIG_USAGE_GUIDE.md](CONFIG_USAGE_GUIDE.md)** - Как использовать config.json (5 примеров + пошаговое руководство)
 - 📖 **[CONFIG_GUIDE.md](CONFIG_GUIDE.md)** - Полный справочник по конфигурации (10+ сценариев)
+- 🔐 **[AUTHENTICATION_GUIDE.md](AUTHENTICATION_GUIDE.md)** - Гайд по авторизации и решение ошибок (RPCError 406)
 - ⚡ **[QUICKSTART.md](QUICKSTART.md)** - Быстрый старт за 5 минут
 - 📋 **[INSTALLATION.md](INSTALLATION.md)** - Подробная инструкция по установке
 
 **Новичок? Начните с [CONFIG_USAGE_GUIDE.md](CONFIG_USAGE_GUIDE.md)!**
+**Проблемы с авторизацией? [AUTHENTICATION_GUIDE.md](AUTHENTICATION_GUIDE.md)**
 
 ## �📋 Требования
 
